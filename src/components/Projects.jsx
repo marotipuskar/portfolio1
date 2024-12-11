@@ -12,11 +12,27 @@ const projects = [
         demo: "https://marotipuskar.github.io/ytmusic/",
     },
     {
+        title: "BG Changer",
+        description: "Clone of you tube music",
+        image: "/assets/facemash.png",
+        status: "complted",
+        github: "https://github.com/marotipuskar/BG_Changer",
+        demo: "https://marotipuskar.github.io/BG_Changer/",
+    },
+    {
+        title: "Desktop Notifier App ",
+        description: "Clone of you tube music",
+        image: "/assets/facemash.png",
+        status: "complted",
+        github: "https://github.com/marotipuskar/Desktop-notifier-App",
+        demo: "https://github.com/marotipuskar/Desktop-notifier-App",
+    },
+    {
     title: "FaceMash",
     description: "A fun app to compare faces.",
     image: "/assets/facemash.png",
     status: "complted",
-    github: "https://github.com/marotipuskar/facemash",
+    github: "https://github.com/marotipuskar/FaceMash1",
     demo: "https://face-mash1.vercel.app/",
   },
   {
