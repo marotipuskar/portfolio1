@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className="bg-primary text-white p-4 fixed top-0 w-full z-50">
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold">
-          <Link to="/">Portfolio</Link>
+          <Link to="/">Maroti Puskar</Link>
         </h1>
         <ul className="hidden md:flex space-x-6">
           <li><Link to="/about" className="hover:underline">About</Link></li>

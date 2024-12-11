@@ -13,6 +13,7 @@
 
 // export default About;
 import React from "react";
+import BackToTop from "./BackToTop";
 
 const About = () => {
   return (
@@ -59,16 +60,21 @@ const About = () => {
           <div className="border-l-2 border-primary pl-4">
             {[
               {
-                year: "2023",
-                event: "Started my journey in web development.",
+                year: "2019",
+                event:  "I completed my schooling and went to science journey with sant tukaram college parbhani",
+              },
+              {
+                year: "2021",
+                event: " i completed my 12th std with 92.33 percentage and wents to engineering college where i enhances various skills   Started my journey in web development.",
+              },
+              {
+                year : "2023",
+                event : "completed my  FaceMash, ytmusic projects and soon "
               },
               {
                 year: "2024",
-                event: "Worked on FaceMash and StaySmart chatbot projects.",
-              },
-              {
-                year: "2024",
-                event: "Currently exploring advanced React.js and animations.",
+                
+                event: "currently i pursuing BTech final year and exploring advanced React.js and animations.",
               },
             ].map((item, index) => (
               <div key={index} className="mb-6 animate_animated animate_fadeInUp">
@@ -79,6 +85,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="App">
+      {/* <div style={{ height: "2000px" }}> 
+        Scroll down to see the "Back to Top" button.
+      </div> */}
+      <BackToTop />
+    </div>
     </section>
   );
 };

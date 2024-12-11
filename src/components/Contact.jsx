@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTop from "./BackToTop";
 
 const Contact = () => {
   return (
@@ -10,21 +11,30 @@ const Contact = () => {
           type="text"
           placeholder="Your Name"
           className="w-full p-2 mb-4 border rounded-md"
+          required
         />
         <input
           type="email"
           placeholder="Your Email"
           className="w-full p-2 mb-4 border rounded-md"
+          required
         />
         <textarea
           placeholder="Your Message"
           className="w-full p-2 mb-4 border rounded-md"
           rows="4"
+          required
         ></textarea>
         <button className="bg-primary text-white px-4 py-2 rounded-md">
           Send
         </button>
       </form>
+      <div className="App">
+      {/* <div style={{ height: "2000px" }}> 
+        Scroll down to see the "Back to Top" button.
+      </div> */}
+      <BackToTop />
+    </div>
     </section>
   );
 };

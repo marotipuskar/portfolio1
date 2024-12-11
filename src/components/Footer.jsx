@@ -10,6 +10,7 @@
 
 // export default Footer;
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -38,9 +39,9 @@ function Footer() {
         {/* <!-- Email Subscription --> */}
         <div class="mb-6">
             <p class="text-lg">Stay informed with our updates:</p>
-            <a href="mailto:adinath@gmail.com" class="inline-flex items-center text-teal-400 hover:text-teal-300 transition duration-300 mt-2">
+            <a href="mailto:marotipuskar@gmail.com" class="inline-flex items-center text-teal-400 hover:text-teal-300 transition duration-300 mt-2">
                 <i class="fas fa-envelope fa-lg mr-2"></i> 
-                <span>adinath@gmail.com</span>
+                <span>marotipuskar@gmail.com</span>
             </a>
         </div>
 
@@ -48,12 +49,12 @@ function Footer() {
         <div class="mb-6 space-x-6">
             <a href="PrivacyPolicy.jsx" class="text-sm hover:text-teal-300 transition duration-300">Privacy Policy</a>
             <a href="TermsAndConditions.jsx" class="text-sm hover:text-teal-300 transition duration-300">Terms & Conditions</a>
-            <a href="AboutUs.jsx" class="text-sm hover:text-teal-300 transition duration-300">About Us</a>
+            <Link to="/about" class="text-sm hover:text-teal-300 transition duration-300">About Us</Link>
         </div>
 
         {/* <!-- Copyright --> */}
         <div>
-            <p class="text-xs text-gray-400">copyright &copy; 2024 <a href='/' className='hover:text-white'>Facemash.</a> All rights reserved.</p>
+            <p class="text-xs text-gray-400">copyright &copy; 2024 <a href='/' className='hover:text-white'>Portfolio</a> All rights reserved.</p>
             <p class="text-xs text-gray-400 mt-1">This website is designed by <strong className=' text-white hover:text-sm hover:text-cyan-400'><a href='https://www.linkedin.com/in/maroti-puskar/'>Maroti Puskar</a> </strong></p>
         </div>
     </div>

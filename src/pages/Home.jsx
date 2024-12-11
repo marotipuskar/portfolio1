@@ -14,15 +14,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import BackToTop from "../components/BackToTop";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Projects from "../components/Projects";
 
 const Home = () => {
   return (
+    <>
     <div className="bg-gradient-to-br from-primary via-accent to-secondary min-h-screen flex flex-col justify-center items-center text-white relative">
       {/* Hero Text */}
       <div className="text-center animate_animated animate_fadeIn">
         <h1 className="text-5xl md:text-6xl font-bold mb-6">
           Hi, I'm <span className="text-accent">Maroti Puskar</span>
         </h1>
+        <img src="../assets/mp.jpg" alt="" />
         <p className="text-lg md:text-xl max-w-2xl mx-auto">
           A passionate front-end developer specializing in React.js, Tailwind CSS, and crafting responsive, user-friendly interfaces.
         </p>
@@ -30,9 +35,9 @@ const Home = () => {
 
       {/* Call-to-Action Button */}
       <div className="mt-10">
-        <Link to="/projects">
+        <Link >
           <button className="bg-white text-primary px-6 py-3 rounded-full text-lg font-semibold hover:scale-105 transition-all">
-            Download my Resume
+            <a href="../assets/RESUMEMarotiPuskar.pdf " download="resume" >download my resume</a>
           </button>
         </Link>
       </div>
@@ -47,6 +52,11 @@ const Home = () => {
       <div className="absolute top-20 left-10 w-40 h-40 bg-accent rounded-full opacity-30 animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-52 h-52 bg-primary rounded-full opacity-20 animate-pulse"></div>
     </div>
+    <Projects/>
+    <About/>
+    <Contact/>
+    </>
+
   );
 };
 
