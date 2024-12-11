@@ -32,7 +32,7 @@ const Home = () => {
       <div className="mt-10">
         <Link to="/projects">
           <button className="bg-white text-primary px-6 py-3 rounded-full text-lg font-semibold hover:scale-105 transition-all">
-            View My Projects
+            Download my Resume
           </button>
         </Link>
       </div>
